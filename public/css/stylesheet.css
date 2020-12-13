@@ -1,0 +1,185 @@
+body{
+    margin:0;
+    min-height: 100vh; /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+    position: relative;/* ←相対位置 */
+    padding-bottom: 5px; /* ←フッターの高さを指定 */
+    box-sizing: border-box;
+}
+
+#header{
+    background-color:deepskyblue;
+    padding-top:15px;
+    padding-bottom:15px;
+    color:white;
+}
+
+#navi nav {
+    padding:0;    
+}
+
+#navi li{
+    width:70px;
+    height:40px;
+    font-size:17px;
+    display:inline-block;
+    text-align:center;
+}
+
+#navi a{
+    color:black;
+}
+
+#main{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10%;
+    width:70%;
+    
+
+}
+
+@media (max-width:1024px) {
+    #main{
+     margin-left: auto;
+     margin-right: auto;
+     width:100%;
+    }
+}
+
+
+#main-content{
+    /*border: solid 1px;*/
+    /*border-color: lightgray;*/
+    /*position: relative;*/
+}
+
+/*#main-content a{*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    height:100%;*/
+/*    width: 100%;*/
+/*}*/
+
+
+/*#main-taitle a{*/
+/*    display:inline-block;*/
+/*}*/
+
+#main-title h1{
+    margin-top:5px;
+    margin-left:10px;
+    margin-bottom:5px;
+    font-size:40px;
+
+}
+
+#main-title h2{
+    margin-top:15px;
+    margin-bottom:0;
+    font-size:25px;
+    text-align:center;
+}
+
+@media (max-width:1024px) {
+  #main-title h2{
+    margin-top:5px;
+    margin-bottom:0;
+    font-size:20px;
+    display:inline-block;
+  }
+}
+
+#main-choice{
+    width:100%;
+    margin-top:25px;
+}
+
+#main-choice p{
+    font-size:18px;
+}
+
+#showLink{
+    margin-top:13px;
+}
+
+#content-link a{
+    padding-left:5px;
+    padding-right:5px;
+    display:inline-block;
+}
+
+
+
+@media (max-width:1024px) {
+    #content-link a{
+     padding-left:5px;
+     padding-right:5px;
+     /*display:inline-block;*/
+     vertical-align:0px;
+    }
+}
+
+#coment{
+    margin-left:30px;
+    margin-bottom:70px;
+}
+
+#coment h3{
+    font-size:15px;
+    color:gray;
+}
+
+#coment p{
+    font-size:25px;
+    margin-bottom:30px;
+}
+
+#coment h4{
+    font-size:13px;
+    text-align:right;
+    margin-right:130px;
+    margin-bottom:30px;
+}
+
+#coment a{
+    display:inline-block;
+    font-size:30px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-left:37%;
+    color:gray;
+    text-decoration:none;
+}
+
+
+#submitBtn{
+    margin-top:30px;
+}
+
+
+#editForm textarea {
+  resize: none;
+  height:200px;
+}
+
+
+
+
+#footer{
+    width:100%;
+    bottom: 0px;
+    background-color:deepskyblue;
+    margin:0;
+    position: absolute;
+    bottom: 0;
+}
+
+#footer h1{
+    margin-top:0px;
+    margin-bottom:0;
+    padding-top:30px;
+    padding-bottom:30px;
+    font-size:20px;
+    color:white;
+}
