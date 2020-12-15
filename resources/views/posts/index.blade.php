@@ -11,7 +11,7 @@
 
 <div id = "main">
     @foreach ($posts as $p)
-        <div class="card">
+        <a class="card" href ="{{ route('detail.show', ['id' => $p->id]) }}">
             <div class="card-block">
                 <div id = "main-content">
         
@@ -26,13 +26,6 @@
                                 </div>
                             </div>  
                         </div> 
-                    </div>
-                    
-    
-                    <div class="col-2" style="">
-                        <div id = "content-link">
-                            <button onclick="location.href='{{ route('detail.show', ['id' => $p->id]) }}'" class="btn btn-outline-primary">投票する</button>
-                        </div>
                     </div>
                     
                     <div class="container">
@@ -51,7 +44,7 @@
                     </div>
                 </div>
             </div>   
-        </div>
+        </a>
     
     @endforeach
 </div>

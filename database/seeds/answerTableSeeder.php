@@ -15,6 +15,7 @@ class answerTableSeeder extends Seeder
         $id_list = ['1','2','3','4'];
         $choices_list = ['QA1','QA2','QA3'];
     
+    
      foreach($id_list as $id => $i){ 
         foreach ($choices_list as $v) {
            Answer::create([

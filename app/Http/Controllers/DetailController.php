@@ -25,6 +25,7 @@ class DetailController extends Controller
         // クエリ文字列からuser_idを取得
         $user_id = $request->input('user_id');
         $answer_id = 0;
+
         $answerList = $answers->where('post_id',$id)->get();
         
         // $playerChoices = $players->where('answer_id',$answerList->id)->get(); 
@@ -69,7 +70,7 @@ class DetailController extends Controller
 
         $commentList = $comments->where('post_id',$id)->get();
         // var_dump($commentList);exit;
-        
+        // var_dump($user_id,$answer_id);exit;
         return view('posts.show', compact('posts','playerChoicesList','commentList','playerVoteList','answer_id','user_id','player_result'));
     }
     

@@ -12,14 +12,15 @@
         <div id = "main-title">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-13 col-lg-7" style="">
+                    <div class="col-7" style="">
                         <h1 class="card-title">{{$posts->title}}</h1>
                     </div>
-                    <div class="col-sm-13 col-lg-2" style="">
+                    <div class="col-2" style="">
                         <h2 class="card-title">{{$posts->user}}</h2>  
                     </div>
                     
-                    <div id ="showLink" class="col-sm-3 col-lg-2" style="">
+                    @if($user_id==$posts->user_id)
+                    <div id ="showLink" class="col-2" style="">
                         <div class="row">
                             <div class="col-5" style="">
                                 <button onclick="location.href='{{ route('edit.show', ['id' => $posts->id]) }}'" class="btn btn-outline-primary">編集</button>
@@ -33,6 +34,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
                 </div>  
         　　</div>
         </div>

@@ -38,6 +38,9 @@ body{
 
 }
 
+
+
+
 @media (max-width:1024px) {
     #main{
      margin-left: auto;
@@ -53,18 +56,17 @@ body{
     /*position: relative;*/
 }
 
-/*#main-content a{*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    height:100%;*/
-/*    width: 100%;*/
-/*}*/
 
 
-/*#main-taitle a{*/
-/*    display:inline-block;*/
-/*}*/
+
+#main a{
+    text-decoration:none;
+    color:black;
+}
+
+#main a:hover {
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.3);
+} 
 
 #main-title h1{
     margin-top:5px;

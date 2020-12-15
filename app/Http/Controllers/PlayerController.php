@@ -17,7 +17,7 @@ class PlayerController extends Controller
         $request->session()->regenerateToken();
         
         // var_dump($request->input('user_id'));exit;
-        // var_dump($request->input('id'), $request->input('answer_id') , $request->input('choices'));exit;
+        // var_dump($request->input('user_id'), $request->input('answer_id'));exit;
 
         $players = new Player;
         $answers = new Answer;
@@ -78,6 +78,7 @@ class PlayerController extends Controller
         // var_dump($answers);exit;
         $commentList = $comments->where('post_id',$id)->get();
     
+ 
 
         return view('posts.show',compact('posts','players','playerChoicesList','commentList','playerVoteList','answer_id','user_id','player_result'));
 
@@ -139,8 +140,8 @@ class PlayerController extends Controller
          }
         $playerVoteList = array_unique($playerVoteList);
         $commentList = $comments->where('post_id',$id)->get();
-       
         // var_dump($playerChoicesList);exit;
+        // var_dump($user_id,$answer_id);exit;
         return view('posts.show', compact('posts','players','playerChoicesList','playerVoteList','commentList','answer_id','user_id','player_result'));
     }
     
