@@ -20,7 +20,7 @@
                     </div>
                     
     
-                    <div id ="showLink" class="col-2" style="">
+                    <div id ="showLink" class="col-3" style="">
                         <div class="row">
                             <div class="col-6" style="">
                                 <button onclick="location.href='{{ route('edit.show', ['id' => $posts->id]) }}'" class="btn btn-outline-primary">編集</button>
