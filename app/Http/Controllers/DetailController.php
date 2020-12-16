@@ -96,7 +96,7 @@ class DetailController extends Controller
     // $posts->where('id', $id)->delete();
     Post::destroy($id);
         
-        return view('posts.delete', compact('posts'));
+        return view('posts.delete');
     }
     
 }
