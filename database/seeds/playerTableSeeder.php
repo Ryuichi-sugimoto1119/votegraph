@@ -12,7 +12,7 @@ class playerTableSeeder extends Seeder
      */
     public function run()
     {   
-        $answer_list = ['A1','A2','A3'];
+        $answer_list = ['1','2','3'];
         $id_list = ['1','2','3','4'];
         $player_list = ['p1','p2','p3','p4'];
         
