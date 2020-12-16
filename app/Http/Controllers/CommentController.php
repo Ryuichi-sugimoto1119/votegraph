@@ -79,6 +79,6 @@ class CommentController extends Controller
          }
         
         $commentList = $comments->where('post_id',$id)->get();
-        return view('posts.show',compact('posts','player','playerChoicesList','comments','commentList','player_result','answer_id'));
+        return view('posts.show',compact('posts','player','playerChoicesList','comments','commentList','player_result','answer_id','user_id'));
     }
 }
