@@ -22,10 +22,10 @@
     
                     <div id ="showLink" class="col-3" style="">
                         <div class="row">
-                            <div class="col-6" style="">
+                            <div class="col-5" style="">
                                 <button onclick="location.href='{{ route('edit.show', ['id' => $posts->id]) }}'" class="btn btn-outline-primary">編集</button>
                             </div>
-                            <div class="col-6" style="">
+                            <div class="col-5" style="">
                                 <form action="{{ url('delete/'.$posts->id) }}" method="POST" onsubmit="if(confirm('本当に削除しますか？')) { return true } else {return false };">
                                     @csrf
                                     <input type="hidden" name="id" value="{{ $posts->id }}">
