@@ -27,6 +27,7 @@ class SubmitController extends Controller
         $post->user = $request->input('user');
         $post->title = $request->input('title');
         $post->text = $request->input('text');
+        // (user_idを作る)
         $post->save();
         
         // $answers = $request->input('answers');

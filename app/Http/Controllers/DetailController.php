@@ -28,6 +28,12 @@ class DetailController extends Controller
 
         $answerList = $answers->where('post_id',$id)->get();
         
+        // // 自分の投稿かどうか判別
+        // $ownFlg = false;
+        // if ($posts->user_id == $user_id) {
+        //     $ownFlg = true;
+        // }
+        
         // $playerChoices = $players->where('answer_id',$answerList->id)->get(); 
         
         $player_result = [];
@@ -71,7 +77,7 @@ class DetailController extends Controller
         $commentList = $comments->where('post_id',$id)->get();
         // var_dump($commentList);exit;
         // var_dump($user_id,$answer_id);exit;
-        return view('posts.show', compact('posts','playerChoicesList','commentList','playerVoteList','answer_id','user_id','player_result'));
+        return view('posts.show', compact('posts','playerChoicesList','commentList','playerVoteList','answer_id','user_id','player_result','ownFlg'));
     }
     
     public function store(Request $request)
